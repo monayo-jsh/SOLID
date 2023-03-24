@@ -1,4 +1,4 @@
 # 리스코프 치환 원칙 (LSP)
 
 > UML
-> ![img.png](img.png)
+> <br/>![img.png](img.png)
