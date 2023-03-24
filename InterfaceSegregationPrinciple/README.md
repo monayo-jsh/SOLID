@@ -22,3 +22,12 @@ User1의 소스 코드는 U1Ops와 op1에는 의존하지만 OPS에는 의존하
 
 따라서 OPS에서 발생한 변경이 User1과는 전혀 관계없는 변경이라면, User1을 다시 컴파일하고 새로 배포하는 상황은 초래되지 않는다.
 
+
+> not 패키지 UML
+> ![img_4.png](img_4.png)
+
+> isp 패키지 UML
+> ![img_3.png](img_3.png)
+
+> example 패키지 UML
+> ![img_2.png](img_2.png)
