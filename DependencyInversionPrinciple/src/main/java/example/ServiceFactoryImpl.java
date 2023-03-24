@@ -3,7 +3,7 @@ package example;
 public class ServiceFactoryImpl implements ServiceFactory {
 
     @Override
-    public Service makeSvc() {
+    public ConcreteImpl makeSvc() {
         return new ConcreteImpl();
     }
 }

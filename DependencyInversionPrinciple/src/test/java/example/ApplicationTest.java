@@ -14,7 +14,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 class ApplicationTest {
 
     @Mock
-    private Service service;
+    private ConcreteImpl concreteImpl;
 
     @Mock
     private ServiceFactoryImpl serviceFactoryImpl;
@@ -22,7 +22,7 @@ class ApplicationTest {
     @Test
     void test1() {
         //given
-        given(serviceFactoryImpl.makeSvc()).willReturn(service);
+        given(serviceFactoryImpl.makeSvc()).willReturn(concreteImpl);
 
         //when
         Application application = new Application(serviceFactoryImpl);
@@ -30,8 +30,8 @@ class ApplicationTest {
 
         //then
         verify(serviceFactoryImpl, times(1)).makeSvc();
-        verify(service, times(1)).method1();
-        verify(service, times(1)).method2();
+        verify(concreteImpl, times(1)).method1();
+        verify(concreteImpl, times(1)).method2();
     }
 
 }

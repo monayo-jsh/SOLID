@@ -35,3 +35,7 @@
 > <br/> ConcreteImpl에 대해 소스 코드 의존성을 만들지 않으면서 이 목적을 이루기 위해 Application은 example.ServiceFactory 인터페이스의 makeSvc 메서드를 호출한다.
 > <br/> 이 메서드는 ServiceFactory로부터 파생된 ServiceFactoryImpl에서 구현된다.
 > <br/> 그리고 example.ServiceFactoryImpl 구현체가 ConcreteImpl의 인스턴스를 생성한 후 example.Service 타입으로 반환한다.
+
+
+> UML
+> <br/> ![img_1.png](img_1.png)
